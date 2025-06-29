@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MY Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+
+</head>
+<body>
+    <nav id="desktop-nav">
+        <div class="logo">CHARAN SURYA NIKHIL KILANA</div>
+        <div>
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#certifications">Certification</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <nav id="hamburger-nav">
+        <div class="logo">CHARAN SURYA NIKHIL KILANA</div>
+        <div class="hamburger-menu">
+          <div class="hamburger-icon" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <div class="menu-links">
+            <li><a href="#about" onclick="toggleMenu()">About</a></li>
+            <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+            <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+            <li><a href="#certifications" onclick="toggleMenu()">Certification</a></li>
+            <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+          </div>
+        </div>
+      </nav>
+      <section id="profile">
+        <div class="section__pic-container">
+            <img src="./assets/dp.jpg" alt="Charan Kilana picture"/>
+        </div>
+        <div class="section__text">
+            <p class="section__text_p1">Hello, I'm </p>
+            <h1 class="title">Charan Kilana</h1>
+            <p class="section__text__p2">DevOps Engineer</p>
+            <div class="btn-container">
+                <button class="btn btn-color-2" 
+                onclick="window.open('./assets/Charan_Resume_25.pdf')">
+                    View Resume
+                </button>
+            </button>
+            <button class="btn btn-color-1" onclick="location.href='./#contact'">
+              Contact Info
+            </button>
+            </div>
+            <div id="socials-container">
+                <img
+                  src="./assets/linkedin.png"
+                  alt="My LinkedIn profile"
+                  class="icon"
+                  onclick="location.href='https://www.linkedin.com/in/charan-surya-kilana/'"
+                />
+                <img
+                  src="./assets/github.png"
+                  alt="My Github profile"
+                  class="icon"
+                  onclick="location.href='https://github.com/charan-kilana'"
+                />
+              </div>
+        </div>
+    </section>
+    <section id="about">
+      <p class="section__text__p1">Get To Know More</p>
+      <h1 class="title">About Me</h1>
+      <div class="section-container">
+        <!-- <div class="section__pic-container">
+          <img
+            src="./assets/about-pic.png"
+            alt="Profile picture"
+            class="about-pic"
+          />
+        </div> -->
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <img
+                src="./assets/experience.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <h3>Experience</h3>
+              <p>2+ years <br />DevOps Experience</p>
+            </div>
+            <div class="details-container">
+              <img
+                src="./assets/education.png"
+                alt="Education icon"
+                class="icon"
+              />
+              <h3>Education</h3>
+              <p>M.Sc. Masters Degree<br />B.Sc Bachelors</p>
+            </div>
+          </div>
+          <div class="text-container">
+            <p>
+              I'm Surya Kilana, a DevOps Engineer at <b>TechZert Software Private Limited </b> with over 2 years of IT experience. I help teams automate software deployments, manage cloud infrastructure, and improve system reliability.<br/>
+              I have an expertise of: <br />
+
+              3 years with <b>Jenkins</b>, building CI/CD pipelines.<br />
+              2 years with <b>Terraform</b>, implementing Infra as Code.<br />
+              2 years with <b>Ansible</b>, automating infrastructure and reducing manual configurations.<br />
+              2 years with <b>Docker</b>, deploying different applications and managing containerized applications in a microservices setup<br />
+              2 years with <b>Kubernetes</b>, orchestrating clusters, pods, and deployments using manifest files for high availability.<br />
+              3 years with <b>Linux</b>, managing server configurations, automation, and security.<br />
+              2 years with <b>AWS</b> services, working with EC2, S3, RDS, IAM, Code-Pipelines, Elastic Beanstalk, CloudFormation, Load Balancers, and ASG for cloud infrastructure.<br />
+            </p>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#experience'"
+      />
+    </section>
+    <section id="experience">
+      <p class="section__text__p1">Explore My</p>
+      <h1 class="title">Experience</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          
+          <!-- First Skills Block -->
+          <div class="details-container">
+            <h2 class="experience-sub-title">DevOps Skills</h2>
+            <div class="article-container">
+              <article>
+                <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                <div>
+                  <h3>LINUX</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                <div>
+                  <h3>JENKINS</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                <div>
+                  <h3>BASH</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+
+              <article>
+                <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                <div>
+                  <h3>MAVEN</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+
+              <article>
+                <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                <div>
+                  <h3>SONARQUBE</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+
+              <article>
+                <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                <div>
+                  <h3>NEXUS</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+
+              <article>
+                <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                <div>
+                  <h3>DOCKER</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+
+            
+              </article>
+
+              <article>
+                <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                <div>
+                  <h3>KUBERNETES</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                <div>
+                  <h3>HELM</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+
+              <article>
+                <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                <div>
+                  <h3>ANSIBLE</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+
+              <article>
+                <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                <div>
+                  <h3>TERRAFORM</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+
+              <article>
+                <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                <div>
+                  <h3>PROMETHEUS</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+
+              <article>
+                <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                <div>
+                  <h3>PROMETHEUS</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+
+              <article>
+                <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                <div>
+                  <h3>GRAFANA</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+
+              <article>
+                <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                <div>
+                  <h3>DATADOG</h3>
+                  <p>INTERMEDIATE</p>
+                </div>
+              </article>
+
+              <article>
+                <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                <div>
+                  <h3>ArgoCD</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+
+              <!-- <article>
+                <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                <div>
+                  <h3>SPLUNK</h3>
+                  <p>INTERMEDIATE</p>
+                </div>
+              </article> -->
+
+              
+
+            </div>
+          </div>
+    
+          <!-- New Block for Additional Skills -->
+          
+    
+        </div>
+      </div>
+      <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#projects'" />
+    </section>
+    
+    <section id="projects">
+      <p class="section__text__p1">Browse My Recent</p>
+      <h1 class="title">Projects</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/eks_proj.png"
+                alt="Project 1"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">EKS-Microservices-Multilanguage</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/charan-kilana/EKS-Microservices-Multilang'"
+
+              >
+                Github
+              </button>
+              <!-- <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Live Demo
+              </button> -->
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/proj_obs_image.png"
+                alt="Project 2"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Observability-EKS-OpenTel-Grafana-Jaeger</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/charan-kilana/Observability-EKS-OpenTelemetry-Prometheus-Grafana-EFK-Jaeger'"
+              >
+                Github
+              </button>
+              <!-- <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Live Demo
+              </button> -->
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/my_thidrd_proj.png"
+                alt="Project 2"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">nodejs-aws-jenkins-k8s-argocd</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/charan-kilana/nodejs-aws-cicd-k8s-pipeline/'"
+              >
+                Github
+              </button>
+              <!-- <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Live Demo
+              </button> -->
+            </div>
+          </div>
+
+
+
+          <!-- Project-4 -->
+           
+        </div>
+        
+        <!-- New -->
+        <div class="about-containers">
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/arch.png"
+                alt="Project 4"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Terraform-Ansible-Jenkins-pipeline</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/charan-kilana/Terraform-Ansible-Jenkins-pipeline'"
+              >
+                Github
+              </button>
+              <!-- <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Live Demo
+              </button> -->
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/Project_Arch.png"
+                alt="Project 2"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Python Microservices Deployment on Amazon-EKS</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/charan-kilana/End-to-End-Microservices-on-Amazon-EKS-with-RabbitMQ-Postgres-and-MongoDB/blob/main/README.md'"
+              >
+                Github
+              </button>
+              <!-- <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Live Demo
+              </button> -->
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/aws_lambda.png"
+                alt="Project 2"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">AWS-Cloud-Cost-Optimization</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/charan-kilana/AWS-Cloud-Cost-Optimization'"
+              >
+                Github
+              </button>
+              <!-- <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Live Demo
+              </button> -->
+            </div>
+          </div>
+          
+
+
+          <!-- Project-4 -->
+           
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#contact'"
+      />
+    </section>
+    <section id="certifications">
+      <p class="section__text__p1">Browse My Recent</p>
+      <h1 class="title">Certifications</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <!-- Certification 1 -->
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img src="./assets/TerraformAssociate.png" alt="Certification 1" class="project-img" />
+            </div>
+            <h2 class="experience-sub-title project-title">HashiCorp Certified: Terraform Associate (003)</h2>
+            <div class="btn-container">
+              <button class="btn btn-color-2 project-btn" onclick="location.href='https://www.credly.com/badges/d1880da6-7b69-493f-81f1-06fd7d2ee617'">View</button>
+              <!-- <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">Live Demo</button> -->
+            </div>
+          </div>
+          
+          <!-- Certification 2 -->
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img src="./assets/aws_soln_arch.png" alt="Certification 2" class="project-img" />
+            </div>
+            <h2 class="experience-sub-title project-title">AWS Certified Solution Architect-Associate</h2>
+            <div class="btn-container">
+              <button class="btn btn-color-2 project-btn" onclick="location.href='https://www.credly.com/earner/earned/badge/b1c97522-87cc-4eab-8dea-0d930a3fd2f6'">View</button>
+              <!-- <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">Live Demo</button> -->
+            </div>
+          </div>
+    
+          <!-- Certification 3 -->
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img src="./assets/aws_cp.png" alt="Certification 3" class="project-img" />
+            </div>
+            <h2 class="experience-sub-title project-title">AWS Certified Cloud Practitioner</h2>
+            <div class="btn-container">
+              <button class="btn btn-color-2 project-btn" onclick="location.href='https://www.credly.com/badges/4a82a65e-b5c8-4ca6-a4b5-d6c8d301ee91'">View</button>
+              <!-- <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">Live Demo</button> -->
+            </div>
+          </div>
+          
+
+        </div>
+
+        <!-- SECOND CONTAINER FOR ADDITIONAL CERTIFICATIONS -->
+        <!-- <div class="about-containers"> -->
+          <!-- Certification 1 -->
+          <!-- <div class="details-container color-container">
+            <div class="article-container">
+              <img src="./assets/project-1.png" alt="Certification 1" class="project-img" />
+            </div>
+            <h2 class="experience-sub-title project-title">Certification One</h2>
+            <div class="btn-container">
+              <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">Github</button>
+              <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">Live Demo</button>
+            </div>
+          </div> -->
+          
+          <!-- Certification 2 -->
+          <!-- <div class="details-container color-container">
+            <div class="article-container">
+              <img src="./assets/project-2.png" alt="Certification 2" class="project-img" />
+            </div>
+            <h2 class="experience-sub-title project-title">Certification Two</h2>
+            <div class="btn-container">
+              <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">Github</button>
+              <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">Live Demo</button>
+            </div>
+          </div> -->
+    
+          <!-- Certification 3 -->
+          <!-- <div class="details-container color-container">
+            <div class="article-container">
+              <img src="./assets/project-3.png" alt="Certification 3" class="project-img" />
+            </div>
+            <h2 class="experience-sub-title project-title">Certification Three</h2>
+            <div class="btn-container">
+              <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">Github</button>
+              <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">Live Demo</button>
+            </div>
+          </div> -->
+          
+        <!-- </div> -->
+      </div>
+      
+      <img src="./assets/arrow.png" 
+      
+      alt="Arrow icon" class="icon arrow" 
+      onclick="location.href='./#contact'" />
+    </section>
+    <section id="contact">
+      <p class="section__text__p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="./assets/email.png"
+            alt="Email icon"
+            class="icon contact-icon email-icon"
+          />
+          <p><a href="mailto:charankilana2025@gmail.com">charankilana2025@gmail.com</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="LinkedIn icon"
+            class="icon contact-icon"
+          />
+          <p><a href="https://www.linkedin.com/in/charan-surya-kilana/">LinkedIn</a></p>
+        </div>
+      </div>
+      <footer>
+        <nav>
+          <div class="nav-links-container">
+            <ul class="nav-links">
+              <li><a href="#about">About</a></li>
+              <li><a href="#experience">Experience</a></li>
+              <li><a href="#projects">Projects</a></li>
+              <li><a href="#contact">Contact</a></li>
+              <li><a href="#certifications">Certification</a></li>
+            </ul>
+          </div>
+        </nav>
+        <p>Thank you for visiting my portfolio. I'm excited about the opportunity to contribute and collaborate.</p>
+      </footer>
+      <img
+          src="./assets/arrow.png"
+          alt="Arrow icon"
+          class="icon arrow"
+          onclick="location.href='./#about'"
+      />
+
+    <script src="script.js"></script>
+</body>
+</html>
